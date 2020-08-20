@@ -1,0 +1,87 @@
+:host {
+
+    ion-list{
+    ion-list-header{
+        font-family: "Sansation" !important;
+        font-weight: bold;
+        color: #444444;
+
+    }
+    ion-item{
+        ion-label{
+            font-family: "Sansation" !important;
+            font-weight: normal;
+            color: #1A4A84;
+            
+
+            .precio{
+              padding: 10px;
+              /* border-radius: 50px; */
+              font-size: 15px;
+              line-height: 32px;
+              float: right;
+              position: relative;
+              z-index: 200;
+              margin-top: -25px;
+              font-family: "Seravek" !important;
+              font-weight: bold;
+              color: #00A7A0;
+            }
+            .precio:hover{
+              opacity: 0.50;
+              -moz-opacity: .50;
+            }
+            .fecha{
+              font-size: 12px;
+              font-family: "Seravek" !important;
+            }
+
+        }
+    }
+}
+
+    ion-slides {
+        height: 100%;
+      }
+
+
+
+    ion-content {
+
+      --background: #fff url('../../../assets/imgs/fondo-app.png') no-repeat center center / cover;
+    }
+    ion-item.fondomuni{
+          --background: var(--ion-item-background,var(--ion-background-color,rgba(0, 0, 0, 0.9)));
+    }
+    ion-card-subtitle{
+      font-family: "Seravek" !important;
+      font-weight: normal;
+      color: #000;
+    }
+    ion-card-title{
+      font-family: "Seravek" !important;
+      font-weight: bold;
+      color: #000;
+      font-size: 1.1em;
+    }
+
+
+
+
+
+
+    ion-segment {
+        justify-content: space-between;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+            display: none;
+        }
+
+        ion-segment-button.segment-button {
+            flex: 1 0 100px;
+        }
+    }
+  }

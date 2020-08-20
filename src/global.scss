@@ -1,0 +1,346 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+
+
+ 
+/* font seravek portal web munlima*/
+@font-face {
+    font-family: 'Seravek';
+    src: url('assets/fonts/seravek/Seravek-Bold.eot');
+    src: url('assets/fonts/seravek/Seravek-Bold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/seravek/Seravek-Bold.woff2') format('woff2'),
+        url('assets/fonts/seravek/Seravek-Bold.woff') format('woff'),
+        url('assets/fonts/seravek/Seravek-Bold.ttf') format('truetype'),
+        url('assets/fonts/seravek/Seravek-Bold.svg#Seravek-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Seravek';
+    src: url('assets/fonts/seravek/Seravek-ExtraLight.eot');
+    src: url('assets/fonts/seravek/Seravek-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/seravek/Seravek-ExtraLight.woff2') format('woff2'),
+        url('assets/fonts/seravek/Seravek-ExtraLight.woff') format('woff'),
+        url('assets/fonts/seravek/Seravek-ExtraLight.ttf') format('truetype'),
+        url('assets/fonts/seravek/Seravek-ExtraLight.svg#Seravek-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Seravek';
+    src: url('assets/fonts/seravek/Seravek-Medium.eot');
+    src: url('assets/fonts/seravek/Seravek-Medium.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/seravek/Seravek-Medium.woff2') format('woff2'),
+        url('assets/fonts/seravek/Seravek-Medium.woff') format('woff'),
+        url('assets/fonts/seravek/Seravek-Medium.ttf') format('truetype'),
+        url('assets/fonts/seravek/Seravek-Medium.svg#Seravek-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Seravek';
+    src: url('assets/fonts/seravek/Seravek-BoldItalic.eot');
+    src: url('assets/fonts/seravek/Seravek-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/seravek/Seravek-BoldItalic.woff2') format('woff2'),
+        url('assets/fonts/seravek/Seravek-BoldItalic.woff') format('woff'),
+        url('assets/fonts/seravek/Seravek-BoldItalic.ttf') format('truetype'),
+        url('assets/fonts/seravek/Seravek-BoldItalic.svg#Seravek-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Seravek';
+    src: url('assets/fonts/seravek/Seravek-Light.eot');
+    src: url('assets/fonts/seravek/Seravek-Light.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/seravek/Seravek-Light.woff2') format('woff2'),
+        url('assets/fonts/seravek/Seravek-Light.woff') format('woff'),
+        url('assets/fonts/seravek/Seravek-Light.ttf') format('truetype'),
+        url('assets/fonts/seravek/Seravek-Light.svg#Seravek-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Seravek';
+    src: url('assets/fonts/seravek/Seravek.eot');
+    src: url('assets/fonts/seravek/Seravek.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/seravek/Seravek.woff2') format('woff2'),
+        url('assets/fonts/seravek/Seravek.woff') format('woff'),
+        url('assets/fonts/seravek/Seravek.ttf') format('truetype'),
+        url('assets/fonts/seravek/Seravek.svg#Seravek') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Seravek';
+    src: url('assets/fonts/seravek/Seravek-ExtraLightItalic.eot');
+    src: url('assets/fonts/seravek/Seravek-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/seravek/Seravek-ExtraLightItalic.woff2') format('woff2'),
+        url('assets/fonts/seravek/Seravek-ExtraLightItalic.woff') format('woff'),
+        url('assets/fonts/seravek/Seravek-ExtraLightItalic.ttf') format('truetype'),
+        url('assets/fonts/seravek/Seravek-ExtraLightItalic.svg#Seravek-ExtraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Seravek';
+    src: url('assets/fonts/seravek/Seravek-MediumItalic.eot');
+    src: url('assets/fonts/seravek/Seravek-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/seravek/Seravek-MediumItalic.woff2') format('woff2'),
+        url('assets/fonts/seravek/Seravek-MediumItalic.woff') format('woff'),
+        url('assets/fonts/seravek/Seravek-MediumItalic.ttf') format('truetype'),
+        url('assets/fonts/seravek/Seravek-MediumItalic.svg#Seravek-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Seravek';
+    src: url('assets/fonts/seravek/Seravek-Italic.eot');
+    src: url('assets/fonts/seravek/Seravek-Italic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/seravek/Seravek-Italic.woff2') format('woff2'),
+        url('assets/fonts/seravek/Seravek-Italic.woff') format('woff'),
+        url('assets/fonts/seravek/Seravek-Italic.ttf') format('truetype'),
+        url('assets/fonts/seravek/Seravek-Italic.svg#Seravek-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Seravek';
+    src: url('assets/fonts/seravek/Seravek-LightItalic.eot');
+    src: url('assets/fonts/seravek/Seravek-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/seravek/Seravek-LightItalic.woff2') format('woff2'),
+        url('assets/fonts/seravek/Seravek-LightItalic.woff') format('woff'),
+        url('assets/fonts/seravek/Seravek-LightItalic.ttf') format('truetype'),
+        url('assets/fonts/seravek/Seravek-LightItalic.svg#Seravek-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+/*fin de estilo seravek*/
+
+/*font sansation*/
+
+@font-face {
+  font-family: 'Sansation';
+  src: url('assets/fonts/sansation/SansationRegular.woff2') format('woff2'),
+      url('assets/fonts/sansation/SansationRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sansation';
+  src: url('assets/fonts/sansation/SansationLight.woff2') format('woff2'),
+      url('assets/fonts/sansation/SansationLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sansation';
+  src: url('assets/fonts/sansation/SansationLightItalic.woff2') format('woff2'),
+      url('assets/fonts/sansation/SansationLightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Sansation';
+  src: url('assets/fonts/sansation/SansationBoldItalic.woff2') format('woff2'),
+      url('assets/fonts/sansation/SansationBoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Sansation';
+  src: url('assets/fonts/sansation/SansationItalic.woff2') format('woff2'),
+      url('assets/fonts/sansation/SansationItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Sansation';
+  src: url('assets/fonts/sansation/SansationBold.woff2') format('woff2'),
+      url('assets/fonts/sansation/SansationBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+//agregando nuevos
+
+ion-toolbar {
+--min-height: 80px;
+}
+
+/*fin estilo sansation*/
+//estilo para el slider home
+.info{
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+.tp-caption{
+  font-family: 'Sansation';
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.2em;
+  margin: 15px;
+}
+.ExtraLargeTitle{
+  font-size: 1.5em;
+}
+.buy-btn {
+  padding: 8px 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #97bc77;
+  margin-left: 0px;
+  background: #fff;
+  letter-spacing: 1px;
+  font-family: 'Sansation', sans-serif;
+  border-radius: 999px;
+}
+
+
+
+.logo-header{
+    width: 45%;
+    margin: 0 auto;
+ }
+
+ .logo-header-menu{
+     width: 45%;
+     margin: 0 auto;
+     padding: 20px;
+     text-align: center;
+  }
+
+ .title-header{
+     padding: 15px 0px 15px 0px;
+
+ }
+
+ .color-blanco{
+   color: #fff;
+   margin: 10px 10px 10px 15px;
+ }
+ .titulo{
+   font-size: 1.2em;
+   padding: 15px;
+   padding-left: 25px;
+   background: url('assets/imgs/fondo-titulo.png') no-repeat;
+   background-color: inherit;
+   height: 50px;
+   font-family: "Sansation";
+   font-weight: bold;
+   color: #1A4A84;
+ }
+ .inicial{
+   margin-top: 0px;
+ }
+
+
+ .menu-inner > ion-header,
+ .menu-inner > ion-content,
+ .menu-inner > ion-footer {
+   background: rgba(26,74,132,1);
+background: -moz-linear-gradient(top, rgba(26,74,132,1) 0%, rgba(26,74,132,1) 13%, rgba(26,74,132,0.99) 15%, rgba(26,74,132,0.92) 27%, rgba(26,74,132,0.86) 37%, rgba(26,74,132,0.72) 61%, rgba(26,74,132,0.6) 82%, rgba(26,74,132,0.5) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(26,74,132,1)), color-stop(13%, rgba(26,74,132,1)), color-stop(15%, rgba(26,74,132,0.99)), color-stop(27%, rgba(26,74,132,0.92)), color-stop(37%, rgba(26,74,132,0.86)), color-stop(61%, rgba(26,74,132,0.72)), color-stop(82%, rgba(26,74,132,0.6)), color-stop(100%, rgba(26,74,132,0.5)));
+background: -webkit-linear-gradient(top, rgba(26,74,132,1) 0%, rgba(26,74,132,1) 13%, rgba(26,74,132,0.99) 15%, rgba(26,74,132,0.92) 27%, rgba(26,74,132,0.86) 37%, rgba(26,74,132,0.72) 61%, rgba(26,74,132,0.6) 82%, rgba(26,74,132,0.5) 100%);
+background: -o-linear-gradient(top, rgba(26,74,132,1) 0%, rgba(26,74,132,1) 13%, rgba(26,74,132,0.99) 15%, rgba(26,74,132,0.92) 27%, rgba(26,74,132,0.86) 37%, rgba(26,74,132,0.72) 61%, rgba(26,74,132,0.6) 82%, rgba(26,74,132,0.5) 100%);
+background: -ms-linear-gradient(top, rgba(26,74,132,1) 0%, rgba(26,74,132,1) 13%, rgba(26,74,132,0.99) 15%, rgba(26,74,132,0.92) 27%, rgba(26,74,132,0.86) 37%, rgba(26,74,132,0.72) 61%, rgba(26,74,132,0.6) 82%, rgba(26,74,132,0.5) 100%);
+background: linear-gradient(to bottom, rgba(26,74,132,1) 0%, rgba(26,74,132,1) 13%, rgba(26,74,132,0.99) 15%, rgba(26,74,132,0.92) 27%, rgba(26,74,132,0.86) 37%, rgba(26,74,132,0.72) 61%, rgba(26,74,132,0.6) 82%, rgba(26,74,132,0.5) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a4a84', endColorstr='#1a4a84', GradientType=0 );
+ }
+
+
+ ion-menu {
+   --ion-background-color:transparent;
+   --ion-text-color: var(--ion-color-primary-contrast);
+ion-header {
+  background: rgba(26,74,132,1);
+  position: inherit;
+}
+   ion-content {
+     background: rgba(26,74,132,1);
+     background: -moz-linear-gradient(top, rgba(26,74,132,1) 0%, rgba(26,74,132,1) 11%, rgba(26,74,132,0.96) 15%, rgba(26,74,132,0.82) 27%, rgba(26,74,132,0.71) 37%, rgba(26,74,132,0.57) 49%, rgba(26,74,132,0.44) 61%, rgba(26,74,132,0) 100%);
+     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(26,74,132,1)), color-stop(11%, rgba(26,74,132,1)), color-stop(15%, rgba(26,74,132,0.96)), color-stop(27%, rgba(26,74,132,0.82)), color-stop(37%, rgba(26,74,132,0.71)), color-stop(49%, rgba(26,74,132,0.57)), color-stop(61%, rgba(26,74,132,0.44)), color-stop(100%, rgba(26,74,132,0)));
+     background: -webkit-linear-gradient(top, rgba(26,74,132,1) 0%, rgba(26,74,132,1) 11%, rgba(26,74,132,0.96) 15%, rgba(26,74,132,0.82) 27%, rgba(26,74,132,0.71) 37%, rgba(26,74,132,0.57) 49%, rgba(26,74,132,0.44) 61%, rgba(26,74,132,0) 100%);
+     background: -o-linear-gradient(top, rgba(26,74,132,1) 0%, rgba(26,74,132,1) 11%, rgba(26,74,132,0.96) 15%, rgba(26,74,132,0.82) 27%, rgba(26,74,132,0.71) 37%, rgba(26,74,132,0.57) 49%, rgba(26,74,132,0.44) 61%, rgba(26,74,132,0) 100%);
+     background: -ms-linear-gradient(top, rgba(26,74,132,1) 0%, rgba(26,74,132,1) 11%, rgba(26,74,132,0.96) 15%, rgba(26,74,132,0.82) 27%, rgba(26,74,132,0.71) 37%, rgba(26,74,132,0.57) 49%, rgba(26,74,132,0.44) 61%, rgba(26,74,132,0) 100%);
+     background: linear-gradient(to bottom, rgba(26,74,132,1) 0%, rgba(26,74,132,1) 11%, rgba(26,74,132,0.96) 15%, rgba(26,74,132,0.82) 27%, rgba(26,74,132,0.71) 37%, rgba(26,74,132,0.57) 49%, rgba(26,74,132,0.44) 61%, rgba(26,74,132,0) 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a4a84', endColorstr='#1a4a84', GradientType=0 );
+      }
+
+
+
+   ion-toolbar {
+     --background: var(--ion-color-primary);
+     opacity: 0.85;
+   }
+
+   ion-list {/* optional, but it needs when you use gradient as a background color.*/
+     background: transparent;
+   }
+   ion-item {/* optional, but it needs when you use gradient as a background color.*/
+     background: transparent;
+     border: none;
+     --border-color: var(--ion-item-border-color,var(--ion-border-color,var(--ion-color-step-150,rgba(0,0,0,0.0))));
+   }
+   ion-label{
+     font-family: "Seravek" !important;
+     font-weight: normal;
+    font-family: var(--ion-font-family,Seravek);
+   }
+ }
+
+ ion-card {
+   ion-card-header{
+     ion-card-title{
+       font-family: "Sansation";
+       font-weight: bold;
+       font-size: 1.4em;
+       color: #1A4A84;
+     }
+   }
+   ion-card-content{
+     font-family: "Seravek";
+   }
+ }
+

@@ -1,0 +1,42 @@
+<ion-header >
+  <ion-toolbar color="header" >
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-align-self-center title-header">
+        <ion-img class="logo-header" src="assets/imgs/logo-emmsa.png"></ion-img>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1 class="titulo inicial"><ion-icon name="paper"></ion-icon>¡DATE PRISA!</h1>
+
+  <ion-item>
+    <ion-label>Selecciona su producto</ion-label>
+    <ionic-selectable
+      item-content 
+      [(ngModel)]="producto"
+      [items]="productos"
+      [hasVirtualScroll] = "true"
+      itemValueField="idCatalogoProducto"
+      itemTextField="nombre"
+      [canSearch]="true"
+      [canClear]="true"
+      (onChange)="portChange($event)">
+    </ionic-selectable>
+  </ion-item>
+
+  <ion-list>
+    <ion-item *ngFor="let precio of precios">
+      <ion-thumbnail slot="start">
+        <img src="{{precio['urlimagproducto']}}">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{precio["nomproducto"]}}</h2>
+         <span class="fecha"> <ion-icon name="calendar-outline"> </ion-icon> {{precio["fecregproducto"]}} </span> <span class="precio">{{precio["precioproducto"]}}</span>
+      </ion-label>
+    </ion-item>
+    </ion-list>
+
+</ion-content>

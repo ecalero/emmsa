@@ -1,0 +1,20 @@
+:host {
+  ion-tabs {
+    ion-tab-bar{
+      ion-tab-button{
+          color: #ffffff;
+          --background: linear-gradient(to top, #1A4A84 0%, #1D5292 100%);
+          font-family: "Seravek";
+          font-weight: normal;
+      }
+      ion-tab-button.tab-selected{
+          --background: linear-gradient(to top, #00A39C 0%, #00C6BC 100%);
+      }
+
+    }
+  }
+
+
+
+
+}

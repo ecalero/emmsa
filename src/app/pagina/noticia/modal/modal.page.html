@@ -1,0 +1,20 @@
+<ion-header >
+  <ion-toolbar color="primary" >
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon  name="undo"></ion-icon> Cerrar
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-align-self-center title-header">
+        <ion-img class="logo-header" src="assets/imgs/logo-emmsa-blanco.png"></ion-img>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content
+  [scrollEvents]="true" class="modal" class="ion-padding">
+
+  <h1 class="titulo inicial"><ion-icon name="paper"></ion-icon>{{noticia.titulo}}</h1>
+  <p [innerHTML]="noticia['contenido']"></p>
+</ion-content>

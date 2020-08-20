@@ -1,0 +1,28 @@
+<ion-header >
+  <ion-toolbar color="header" >
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-align-self-center title-header">
+        <ion-img class="logo-header" src="assets/imgs/logo-emmsa.png"></ion-img>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides pager="true" [options]="slideOpts">
+
+
+
+    <ion-slide *ngFor="let slide of slider" [style.background-image]="'url(' + (slide['icono']) + ')'"  style='background: no-repeat center center / cover;'>
+      <ion-row>
+        <ion-col>
+          <p [innerHTML]="slide['resumen']"></p>
+      </ion-col>
+      </ion-row>
+    </ion-slide>
+
+ 
+
+  </ion-slides>
+</ion-content>

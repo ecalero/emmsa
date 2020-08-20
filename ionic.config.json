@@ -1,0 +1,8 @@
+{
+  "name": "pe.com.emmsa",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
